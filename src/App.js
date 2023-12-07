@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react'
+import Signup from './components/Sigup'
+import { Routes, Route,useParams } from 'react-router-dom'
+import Home from './components/Home'
+import Signin from './components/Signin'
+import About from './components/About'
+import Contact from './components/Contact'
+import ProductView from './components/ProductView'
+import Cart from './components/Cart'
+import Gallery from './components/Gallery'
+import Errorpage from './components/Errorpage'
+import Logout from './components/Logout'
+const App = () => {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Routes>
+    <Route path='/' element={<Home/>}/>
+    <Route path='/home' element={<Home/>}/>
+    <Route path='/about' element={<About/>}/>
+    <Route path='/signup' element={<Signup/>}/>
+    <Route path='/login' element={<Signin/>}/>
+    <Route path='/contact' element={<Contact/>}/>
+    <Route path='/productview/:pid' element={<ProductView/>}/>
+    <Route path='/cart' element={<Cart/>}/>
+    <Route path='/gallery' element={<Gallery/>}/>
+    <Route path='/logout' element={<Logout/>}/>
+    <Route path='*' element={<Errorpage/>}/>
+    
+    </Routes>
+      
+    </>
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,46 @@
+
+.pvcontainer{
+    width: 160vmin;
+    display: flex;
+    gap: 10vmin;
+    padding:5vmin;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin:4vmin;
+    margin-left: 17vmin;
+    box-shadow: gray 2px 10px 10px 10px;
+}
+.pvcontainer>img{
+    height: 80vmin;
+    border-radius: 2vmin;
+}
+.pvdetails>p>span{
+    font-size: 3vmin;
+    font-weight:400;
+}
+.pvdetails>p{
+    margin-top: 2vmin;
+}
+.pvdetails>button{
+    width: 90vmin;
+    height: 5vmin;
+    margin-top: 16vmin;
+    background-color: rgb(187, 17, 17);
+    font-size:3vmin;
+    color: white;
+}
+.sx{
+    position: absolute;
+    top:1vmin;
+    left: 1vmin;
+    display: flex;
+    flex-direction: column;
+}
+.sx>a{
+    padding: 0.5vmin;
+    width: 13vmin;
+    background-color: rgb(241, 16, 16);
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+}

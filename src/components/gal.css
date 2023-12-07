@@ -1,0 +1,31 @@
+.cb{
+    display: flex;
+    flex-direction: column;
+    gap: 2vmin;
+    align-items: center;
+}
+.ctb{
+    width:150vmin;
+    display: flex;
+    height: 80vmin;
+    border: 2px solid rgb(144, 144, 144);
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: gray 4px 10px 10px 10px;
+}
+.gdetail{
+    display: grid;
+    /* flex-direction: column; */
+    width: 70vmin;
+    height: 70vmin;
+    /* border:2px solid red; */
+    place-content: center;
+}
+.gdetail span{
+    font-size: 3vmin;
+    font-weight:400;
+}
+.backhome{
+    background-color: red;
+    font-weight: bold;
+}
